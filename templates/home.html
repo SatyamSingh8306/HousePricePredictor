@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Real Estate Data Form of USA</h2>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="sqft_living">Sqft Living:</label>
+                <input type="number" id="sqft_living" name="sqft_living" required>
+            </div>
+            <div class="form-group">
+                <label for="sqft_lot">Sqft Lot:</label>
+                <input type="number" id="sqft_lot" name="sqft_lot" required>
+            </div>
+            <div class="form-group">
+                <label for="sqft_above">Sqft Above:</label>
+                <input type="number" id="sqft_above" name="sqft_above" required>
+            </div>
+            <div class="form-group">
+                <label for="rooms">Rooms:</label>
+                <input type="number" id="rooms" name="rooms" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" >
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+</html>
